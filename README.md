@@ -27,24 +27,33 @@ Desenvolvida por **Pedro Ernesto** durante o curso Fullstack da Rocketseat.
 
 ## Como rodar o projeto
 
-1. Instale as dependências:
+1. **Clone o repositório:**
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd API-Restaurante
+   ```
+2. **Instale as dependências:**
    ```bash
    npm install
    ```
-2. Rode as migrations:
+3. **Rode as migrations para criar as tabelas:**
    ```bash
    npm run knex -- migrate:latest
    ```
-3. Rode as seeds (opcional):
+4. **(Opcional) Rode as seeds para popular o banco de dados:**
    ```bash
    npm run knex -- seed:run
    ```
-4. Inicie o servidor:
+5. **Inicie o servidor em modo desenvolvimento:**
    ```bash
    npm run dev
    ```
 
 O servidor estará disponível em `http://localhost:3333`.
+
+> **Obs:**
+> - O banco de dados SQLite será criado automaticamente em `src/database/database.db`.
+> - Para testar os endpoints, utilize o arquivo `Rotas_Insomnia.yaml` no Insomnia ou outra ferramenta de API.
 
 ## Boas práticas
 
