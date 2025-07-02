@@ -1,0 +1,25 @@
+{
+    "name": "api-restaurante",
+    "version": "1.0.0",
+    "description": "API para gerenciar pedidos de mesas de um restaurante",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "knex": "tsx ./node_modules/knex/bin/cli.js"
+    },
+    "keywords": [],
+    "author": "Pedro Ernesto",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^5.1.0",
+        "knex": "^3.1.0",
+        "sqlite3": "^5.1.7",
+        "tsx": "^4.19.4",
+        "zod": "^3.25.31"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.2",
+        "@types/node": "^22.15.21",
+        "typescript": "^5.8.3"
+    }
+}
